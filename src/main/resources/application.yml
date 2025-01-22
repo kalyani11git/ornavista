@@ -1,0 +1,53 @@
+#spring:
+#  data:
+#    mongodb:
+#      uri : mongodb+srv://rcpitwork11:RzxGi4f7I70wDhOP@cluster0.liobdhs.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+#      database : journal
+#      auto-index-creation : true
+
+Spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: event
+      auto-index-creation : true
+
+
+
+
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+      enabled: true
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: rcpitwork11@gmail.com
+    password: gbuu tuus vzyl afeb
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+
+
+
+  main:
+    allow-bean-definition-overriding: true
+
+  logging:
+  level:
+  or:
+  springframework:
+  web: DEBUG
+
+#server:
+#  tomcat:
+#  connection-timeout: 60000  # 60 seconds
+
